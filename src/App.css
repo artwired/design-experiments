@@ -55,7 +55,7 @@
 
 .landing-header__title {
   max-width: 14ch;
-  margin: 0;
+  margin: 0 0 15px;
   font-size: clamp(2.9rem, 6vw, 4.9rem);
   line-height: 0.95;
   text-align: center;
@@ -65,10 +65,11 @@
   max-width: 56ch;
   text-align: center;
   color: rgb(66, 57, 57);
+  margin-bottom: 0.7em;
 }
 
 .landing-header__note {
-  margin: 0;
+  margin: 0 0 1em;
   padding: 0.8rem 1rem;
   border: 1px solid rgba(214, 94, 162, 0.18);
   border-radius: 999px;
@@ -82,7 +83,7 @@
 
 .landing-header__actions {
   display: grid;
-  gap: 12px;
+  gap: 18px;
   justify-content: center;
 }
 

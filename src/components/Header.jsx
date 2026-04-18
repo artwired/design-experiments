@@ -1,9 +1,9 @@
-import { Link } from 'react-router-dom'
+import { Link } from "react-router-dom";
 
 const actions = [
-  { to: '/a', label: 'View Design A' },
-  { to: '/b', label: 'View Design B', tone: 'secondary' },
-]
+  { to: "/a", label: "View Design A" },
+  { to: "/b", label: "View Design B", tone: "secondary" },
+];
 
 function Header() {
   return (
@@ -15,18 +15,14 @@ function Header() {
           Content Layout Systems
         </h1>
         <p className="landing-header__description">
-          A comparison of two layout approaches for presenting a collection of
-          visual content.
-        </p>
-        <p className="landing-header__description">
-          This study explores how structure and hierarchy impact scanability and
-          visual clarity.
+          A direct comparison of two layout approaches used to present visual
+          content across galleries, portfolios, and ecommerce interfaces.
         </p>
       </div>
 
       <p className="landing-header__note">
-        Same artwork set. Two layout systems. One noticeably clearer browsing
-        experience.
+        Both examples use the same artwork set — the only difference is how the
+        content is structured.
       </p>
 
       <div className="landing-header__actions">
@@ -34,11 +30,11 @@ function Header() {
           <Link
             key={label}
             className={[
-              'landing-header__button',
-              tone === 'secondary' ? 'landing-header__button--secondary' : '',
+              "landing-header__button",
+              tone === "secondary" ? "landing-header__button--secondary" : "",
             ]
               .filter(Boolean)
-              .join(' ')}
+              .join(" ")}
             to={to}
           >
             {label}
@@ -46,7 +42,7 @@ function Header() {
         ))}
       </div>
     </header>
-  )
+  );
 }
 
-export default Header
+export default Header;
