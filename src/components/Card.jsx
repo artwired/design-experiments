@@ -175,7 +175,7 @@ export default function Card({ item, variant = "a" }) {
               className="view-details-button"
               onClick={openModal}
             >
-              View artwork
+              View art
             </button>
           </div>
         </div>
