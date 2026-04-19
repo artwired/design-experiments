@@ -85,6 +85,11 @@ header {
 .cards img {
   width: 100%;
   display: block;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+.cards img.loaded {
+  opacity: 1;
 }
 
 .image-button {

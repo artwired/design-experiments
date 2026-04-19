@@ -124,7 +124,12 @@ export default function Card({ item, variant = "a" }) {
           onClick={openModal}
           aria-label={`Open larger view of ${item.title}`}
         >
-          <img src={item.image} alt={item.title} />
+          <img
+            src={item.image}
+            alt={item.title}
+            loading="lazy"
+            onLoad={(e) => e.target.classList.add("loaded")}
+          />
           <span className="image-overlay" aria-hidden="true">
             <span className="image-overlay__icon">
               <i className="fa-solid fa-magnifying-glass"></i>
