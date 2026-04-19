@@ -580,6 +580,17 @@ button {
     justify-self: center;
   }
 }
+@media (max-width: 768px) {
+  .image-modal {
+    align-items: center;
+    justify-content: center;
+  }
+
+  .image-modal__content {
+    justify-content: center;
+    text-align: center;
+  }
+}
 @media (max-width: 375px) {
   .grid-b {
     gap: 18px;
