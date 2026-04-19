@@ -41,7 +41,7 @@ export default function DesignB() {
 
       <header>
         <h1>Design B</h1>
-        <p>
+        <p className="intro-text">
           Here we have a structured layout where content is clearly grouped and
           easy to scan.
         </p>

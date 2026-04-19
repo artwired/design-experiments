@@ -540,13 +540,6 @@ button {
     width: 80%;
   }
 
-  .grid-a {
-    display: grid;
-    grid-template-columns: repeat(3, minmax(0, 1fr));
-    gap: 40px;
-    padding: 40px;
-  }
-
   .card-a {
     width: 100%;
   }
@@ -580,6 +573,17 @@ button {
     justify-self: center;
   }
 }
+
+@media (min-width: 768px) {
+  .grid-a {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .grid-a .card-a {
+    width: 100%;
+  }
+}
 @media (max-width: 820px) {
   .image-modal {
     align-items: center;
@@ -590,12 +594,11 @@ button {
     justify-content: center;
     text-align: center;
   }
-}
-@media (min-width: 768px) {
-  .grid-a .card-a {
-    width: calc(33.333% - 16px);
+  p.intro-text {
+    padding: 0 20px;
   }
 }
+
 @media (max-width: 375px) {
   .grid-b {
     gap: 18px;

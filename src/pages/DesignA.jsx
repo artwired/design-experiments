@@ -41,7 +41,7 @@ export default function DesignA() {
 
       <header>
         <h1>Design A</h1>
-        <p>
+        <p className="intro-text">
           Here we have a layout without clear structure, making it harder to
           scan.
         </p>
