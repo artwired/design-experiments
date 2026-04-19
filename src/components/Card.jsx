@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 
-export default function Card({ item, variant = "a" }) {
+export default function Card({ item, variant = "a", priority = false }) {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [shareState, setShareState] = useState("idle");
   const artworkSlug = item.title
@@ -124,7 +124,12 @@ export default function Card({ item, variant = "a" }) {
           onClick={openModal}
           aria-label={`Open larger view of ${item.title}`}
         >
-          <img src={item.image} alt={item.title} />
+          <img
+            src={item.image}
+            alt={item.title}
+            loading={priority ? "eager" : "lazy"}
+            onLoad={(e) => e.target.classList.add("loaded")}
+          />
           <span className="image-overlay" aria-hidden="true">
             <span className="image-overlay__icon">
               <i className="fa-solid fa-magnifying-glass"></i>

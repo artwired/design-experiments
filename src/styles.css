@@ -85,8 +85,16 @@ header {
 .cards img {
   width: 100%;
   display: block;
+  aspect-ratio: 4 / 5;
+  object-fit: cover;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+  background: #eee;
 }
 
+.cards img.loaded {
+  opacity: 1;
+}
 .image-button {
   position: relative;
   display: block;

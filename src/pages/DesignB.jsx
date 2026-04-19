@@ -53,7 +53,9 @@ export default function DesignB() {
         </p>
       </div>
 
-      {loading ? <p style={{ textAlign: "center" }}>Loading artwork...</p> : null}
+      {loading ? (
+        <p style={{ textAlign: "center" }}>Loading artwork...</p>
+      ) : null}
 
       {error ? (
         <p style={{ textAlign: "center", color: "crimson" }}>
@@ -69,8 +71,8 @@ export default function DesignB() {
 
       {!loading && !error && artworks.length > 0 ? (
         <section className="grid-b">
-          {artworks.map((item) => (
-            <Card key={item.id} item={item} variant="b" />
+          {artworks.map((item, index) => (
+            <Card key={item.id} item={item} priority={index < 2} variant="b" />
           ))}
         </section>
       ) : null}
