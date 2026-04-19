@@ -42,7 +42,8 @@ export default function DesignB() {
       <header>
         <h1>Design B</h1>
         <p>
-          A structured layout where content is clearly grouped and easy to scan.
+          Here we have a structured layout where content is clearly grouped and
+          easy to scan.
         </p>
       </header>
 

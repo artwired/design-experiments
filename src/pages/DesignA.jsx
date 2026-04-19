@@ -41,7 +41,10 @@ export default function DesignA() {
 
       <header>
         <h1>Design A</h1>
-        <p>A layout without clear structure, making it harder to scan.</p>
+        <p>
+          Here we have a layout without clear structure, making it harder to
+          scan.
+        </p>
       </header>
 
       <div className="page-nav">
