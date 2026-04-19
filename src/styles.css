@@ -592,8 +592,8 @@ button {
   }
 }
 @media (min-width: 768px) {
-  .grid-b {
-    grid-template-columns: repeat(3, minmax(0, 1fr));
+  .grid-a .card-a {
+    width: calc(33.333% - 16px);
   }
 }
 @media (max-width: 375px) {
