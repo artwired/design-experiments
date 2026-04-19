@@ -591,6 +591,11 @@ button {
     text-align: center;
   }
 }
+@media (min-width: 768px) {
+  .grid-b {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
 @media (max-width: 375px) {
   .grid-b {
     gap: 18px;
