@@ -41,7 +41,9 @@ export default function DesignB() {
 
       <header>
         <h1>Design B</h1>
-        <p>A more balanced gallery with consistent card framing.</p>
+        <p>
+          A structured layout where content is clearly grouped and easy to scan.
+        </p>
       </header>
 
       <div className="page-nav">
@@ -49,7 +51,7 @@ export default function DesignB() {
           ← Back to homepage
         </Link>
         <p className="compare-link-text">
-          Want to compare layouts? <Link to="/a">View Design A</Link>
+          Compare this layout to: <Link to="/a">Design A</Link>
         </p>
       </div>
 

@@ -41,7 +41,7 @@ export default function DesignA() {
 
       <header>
         <h1>Design A</h1>
-        <p>A content-forward grid populated from Supabase.</p>
+        <p>A layout without clear structure, making it harder to scan.</p>
       </header>
 
       <div className="page-nav">
@@ -49,7 +49,7 @@ export default function DesignA() {
           ← Back to homepage
         </Link>
         <p className="compare-link-text">
-          Want to compare layouts? <Link to="/b">View Design B</Link>
+          Compare this layout to: <Link to="/b">Design B</Link>
         </p>
       </div>
 
