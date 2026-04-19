@@ -85,8 +85,9 @@ header {
 .cards img {
   width: 100%;
   display: block;
-  aspect-ratio: 4 / 5;
-  object-fit: cover;
+  /* aspect-ratio: 4 / 5; */
+  height: auto;
+  /* object-fit: cover; */
   opacity: 0;
   transition: opacity 0.5s ease;
   background: #eae9e9;
