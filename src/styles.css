@@ -455,12 +455,15 @@ button {
 .grid-a .card-a:nth-child(n + 3) .image-button img {
   margin-top: -0.75em;
 }
-
+@media (min-width: 768px) {
+  .grid-b {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
 @media (max-width: 900px) {
   .desktop-back-link {
     display: none;
   }
-
   .page-nav {
     justify-items: stretch;
   }
